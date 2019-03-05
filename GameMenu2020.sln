@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "LaunchMenu", "GameMenu2020\LaunchMenu.vbproj", "{9D413439-8A50-45E2-94C9-50FCD41C29E0}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "LaunchManager", "GameManager2020\LaunchManager.vbproj", "{65ED02B7-363E-47BE-8B00-6226EA84DA05}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Import", "Import\Import.vbproj", "{27467C8D-FEDC-42FD-97F1-4898421B33C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9D413439-8A50-45E2-94C9-50FCD41C29E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D413439-8A50-45E2-94C9-50FCD41C29E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D413439-8A50-45E2-94C9-50FCD41C29E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D413439-8A50-45E2-94C9-50FCD41C29E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65ED02B7-363E-47BE-8B00-6226EA84DA05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65ED02B7-363E-47BE-8B00-6226EA84DA05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65ED02B7-363E-47BE-8B00-6226EA84DA05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65ED02B7-363E-47BE-8B00-6226EA84DA05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27467C8D-FEDC-42FD-97F1-4898421B33C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27467C8D-FEDC-42FD-97F1-4898421B33C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27467C8D-FEDC-42FD-97F1-4898421B33C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27467C8D-FEDC-42FD-97F1-4898421B33C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

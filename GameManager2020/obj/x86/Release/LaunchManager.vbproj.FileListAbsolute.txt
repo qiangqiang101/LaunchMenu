@@ -1,0 +1,17 @@
+D:\Projects\GameMenu2020\GameManager2020\bin\x86\Release\LaunchManager.exe.config
+D:\Projects\GameMenu2020\GameManager2020\obj\x86\Release\Interop.IWshRuntimeLibrary.dll
+D:\Projects\GameMenu2020\GameManager2020\obj\x86\Release\LaunchManager.vbproj.ResolveComReference.cache
+D:\Projects\GameMenu2020\GameManager2020\bin\x86\Release\LaunchManager.exe
+D:\Projects\GameMenu2020\GameManager2020\bin\x86\Release\LaunchManager.pdb
+D:\Projects\GameMenu2020\GameManager2020\bin\x86\Release\LaunchManager.xml
+D:\Projects\GameMenu2020\GameManager2020\bin\x86\Release\IconExtractor.dll
+D:\Projects\GameMenu2020\GameManager2020\bin\x86\Release\IconExtractor.pdb
+D:\Projects\GameMenu2020\GameManager2020\obj\x86\Release\LaunchManager.Form1.resources
+D:\Projects\GameMenu2020\GameManager2020\obj\x86\Release\LaunchManager.frmMain.resources
+D:\Projects\GameMenu2020\GameManager2020\obj\x86\Release\LaunchManager.frmActivate.resources
+D:\Projects\GameMenu2020\GameManager2020\obj\x86\Release\LaunchManager.frmRegister.resources
+D:\Projects\GameMenu2020\GameManager2020\obj\x86\Release\LaunchManager.Resources.resources
+D:\Projects\GameMenu2020\GameManager2020\obj\x86\Release\LaunchManager.vbproj.GenerateResource.Cache
+D:\Projects\GameMenu2020\GameManager2020\obj\x86\Release\LaunchManager.exe
+D:\Projects\GameMenu2020\GameManager2020\obj\x86\Release\LaunchManager.xml
+D:\Projects\GameMenu2020\GameManager2020\obj\x86\Release\LaunchManager.pdb

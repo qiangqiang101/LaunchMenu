@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Category>Videos</Category>
+  <Index>9</Index>
+  <Type>Seperator</Type>
+  <Games />
+  <HasIcon>false</HasIcon>
+  <Icon>_3DGlasses</Icon>
+</GameList>

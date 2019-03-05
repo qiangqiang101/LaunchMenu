@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9D413439-8A50-45E2-94C9-50FCD41C29E0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>LaunchMenu.My.MyApplication</StartupObject>
+    <RootNamespace>LaunchMenu</RootNamespace>
+    <AssemblyName>LaunchMenu</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>LaunchMenu.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>LaunchMenu.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\launchmenuicon-256x256.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>41CC569370F93F989242589467A8833F769F681C</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>LaunchMenu_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Apps\Screen Lock\frmScreenLock.Designer.vb">
+      <DependentUpon>frmScreenLock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\Screen Lock\frmScreenLock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apps\Screen Lock\slLock.Designer.vb">
+      <DependentUpon>slLock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\Screen Lock\slLock.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Apps\Screen Lock\slUnlock.Designer.vb">
+      <DependentUpon>slUnlock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\Screen Lock\slUnlock.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\iniRead.vb" />
+    <Compile Include="Class\Weather.vb" />
+    <Compile Include="Controls\AppItemL.Designer.vb">
+      <DependentUpon>AppItemL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AppItemL.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AppItemS.Designer.vb">
+      <DependentUpon>AppItemS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AppItemS.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AppItemW.Designer.vb">
+      <DependentUpon>AppItemW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AppItemW.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\GradientPanel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\LargeItemPanel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NewsLabel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SliderLItem.Designer.vb">
+      <DependentUpon>SliderLItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SliderLItem.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SmallItemPanel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SmoothAutoScrollFlowLayoutPanel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SocialLabel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\WideItemPanel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmLaunch.Designer.vb">
+      <DependentUpon>frmLaunch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLaunch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Xylos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class\Games.vb" />
+    <Compile Include="Class\Dwm.vb" />
+    <Compile Include="Class\Logger.vb" />
+    <Compile Include="Class\TabPageComparer.vb" />
+    <Compile Include="frmLoading.Designer.vb">
+      <DependentUpon>frmLoading.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoading.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.vb">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\MetroDisk.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class\Helper.vb" />
+    <Compile Include="Class\MenuSettings.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Controls\Skin.Designer.vb">
+      <DependentUpon>Skin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Skin.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\Theme.vb" />
+    <Compile Include="Class\WinApi.vb" />
+    <Compile Include="Class\RSSChannel.vb" />
+    <Compile Include="Controls\SliderSItem.Designer.vb">
+      <DependentUpon>SliderSItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SliderSItem.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Apps\Screen Lock\frmScreenLock.resx">
+      <DependentUpon>frmScreenLock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\Screen Lock\slLock.resx">
+      <DependentUpon>slLock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\Screen Lock\slUnlock.resx">
+      <DependentUpon>slUnlock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AppItemL.resx">
+      <DependentUpon>AppItemL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AppItemS.resx">
+      <DependentUpon>AppItemS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AppItemW.resx">
+      <DependentUpon>AppItemW.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SliderLItem.resx">
+      <DependentUpon>SliderLItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLaunch.resx">
+      <DependentUpon>frmLaunch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoading.resx">
+      <DependentUpon>frmLoading.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Skin.resx">
+      <DependentUpon>Skin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SliderSItem.resx">
+      <DependentUpon>SliderSItem.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grand Theft Auto V.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Data\Images\Rating\ESRB_Mature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Data\Images\NO_IMAGE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-500.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GM20.ico" />
+    <None Include="Resources\wordpad.png" />
+    <None Include="Resources\snip.png" />
+    <None Include="Resources\joy.png" />
+    <None Include="Resources\mip.png" />
+    <None Include="Resources\calculator.png" />
+    <None Include="Resources\magnify.png" />
+    <None Include="Resources\Microsoft Edge.png" />
+    <None Include="Resources\Internet Explorer.png" />
+    <None Include="Resources\Notepad.png" />
+    <None Include="Resources\mouse.png" />
+    <None Include="Resources\Settings_Screen_Lock.png" />
+    <None Include="Resources\LaunchMenuLogo-w-t.gif" />
+    <None Include="Resources\LaunchMenuLogo-w.gif" />
+    <None Include="Resources\LaunchMenuLogo.gif" />
+    <None Include="Resources\launchmenuicon-256x256.ico" />
+    <None Include="Resources\launchmenuicon-192x192.ico" />
+    <None Include="Resources\launchmenuicon-128x128.ico" />
+    <None Include="Resources\launchmenuicon-96x96.ico" />
+    <None Include="Resources\launchmenuicon-64x64.ico" />
+    <None Include="Resources\launchmenuicon-48x48.ico" />
+    <None Include="Resources\launchmenuicon-32x32.ico" />
+    <None Include="Resources\launchmenuicon-24x24.ico" />
+    <None Include="Resources\launchmenuicon-16x16.ico" />
+    <None Include="Resources\Google Chrome.png" />
+    <None Include="Resources\Adobe Acrobat Reader.ico" />
+    <None Include="Resources\glitched_discord.gif" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>COPY "$(TargetDir)$(TargetFileName)" "E:\Program Files (x86)\Launch Menu"
+COPY "$(TargetDir)$(TargetName).pdb" "E:\Program Files (x86)\Launch Menu"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
